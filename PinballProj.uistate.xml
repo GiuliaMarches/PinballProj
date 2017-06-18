@@ -10,8 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Layout 1</layout>
-        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+        <layout active="1" order="0">Pinball</layout>
+        <layout order="2">Menu</layout>
+        <layout order="4">EndScreen</layout>
+        <event-sheet order="1">PinballSheet</event-sheet>
+        <event-sheet order="3">MenuSheet</event-sheet>
+        <event-sheet order="5">EndScreenSheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -19,9 +23,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1" />
+    <families-expanded root="1">
+        <family expanded="1" name="Obstacles" />
+    </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Basic elements/" />
+        <folder expanded="1" path="object-folder/Obstacles and board/" />
+        <folder expanded="1" path="object-folder/Buttons and power-ups/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -30,10 +39,23 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Ball/" />
         <folder expanded="1" path="animation-folder/JointLeft/" />
-        <folder expanded="1" path="animation-folder/Wall/" />
-        <folder expanded="1" path="animation-folder/Obstacle/" />
+        <folder expanded="1" path="animation-folder/JointRight/" />
         <folder expanded="1" path="animation-folder/PadLeft/" />
         <folder expanded="1" path="animation-folder/PadRight/" />
-        <folder expanded="1" path="animation-folder/JointRight/" />
+        <folder expanded="1" path="animation-folder/Obstacle/" />
+        <folder expanded="1" path="animation-folder/Obstacle2/" />
+        <folder expanded="1" path="animation-folder/Obstacle3/" />
+        <folder expanded="1" path="animation-folder/Obstacle4/" />
+        <folder expanded="1" path="animation-folder/ObstacleMoon1/" />
+        <folder expanded="1" path="animation-folder/ObstacleMoon2/" />
+        <folder expanded="1" path="animation-folder/Pipe/" />
+        <folder expanded="1" path="animation-folder/PipesMask/" />
+        <folder expanded="1" path="animation-folder/Pits/" />
+        <folder expanded="1" path="animation-folder/Wall/" />
+        <folder expanded="1" path="animation-folder/Button/" />
+        <folder expanded="1" path="animation-folder/RiaPowerUp/" />
+        <folder expanded="1" path="animation-folder/SpaceckPowerUp/" />
+        <folder expanded="1" path="animation-folder/RagnarPowerUp/" />
+        <folder expanded="1" path="animation-folder/LoriPowerUp/" />
     </folders-expanded>
 </c2uistate>

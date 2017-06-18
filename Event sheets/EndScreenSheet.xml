@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EndScreenSheet</name>
+    <events>
+        <event-block sid="265889715626926">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="394500472330107" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="421961086941649" type="YourScore">
+                    <param id="0" name="Text">&quot;Your Score: &quot; &amp; score</param>
+                </action>
+                <action id="5" name="Set web font" sid="261161623701811" type="YourScore">
+                    <param id="0" name="Family name">&quot;monkey_island_1990_refinedRg&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="297329055512056" type="GameOverText">
+                    <param id="0" name="Family name">&quot;monkey_island_1990_refinedRg&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
