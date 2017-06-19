@@ -14,6 +14,12 @@
                     <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="0" name="Play" sid="576049280614648" type="Audio">
+                    <param id="0" name="Audio file">Two Steps From Hell - Eternal Sorrow</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;EndMusic&quot;</param>
+                </action>
                 <action id="0" name="Set text" sid="421961086941649" type="YourScore">
                     <param id="0" name="Text">&quot;Your Score: &quot; &amp; score</param>
                 </action>
@@ -22,6 +28,10 @@
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
                 <action id="5" name="Set web font" sid="297329055512056" type="GameOverText">
+                    <param id="0" name="Family name">&quot;dwarves&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="729661693119981" type="PressEnter">
                     <param id="0" name="Family name">&quot;dwarves&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>

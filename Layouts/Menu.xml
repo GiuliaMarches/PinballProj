@@ -120,7 +120,7 @@
                         <text>Control the flippers with A and D in this epic D&amp;D adventure</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-48,400,0</font>
-                        <color>255,153,0</color>
+                        <color>255,204,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>

@@ -289,8 +289,8 @@
                                 <point x="0.909747" y="0.836736" />
                                 <point x="0.485109" y="1" />
                                 <point x="0" y="0.806971" />
-                                <point x="0.442239" y="0.848639" />
-                                <point x="0.851986" y="0.517007" />
+                                <point x="0.608304" y="0.760204" />
+                                <point x="0.844766" y="0.431973" />
                                 <point x="0.765343" y="1.66082e-006" />
                             </collision-poly>
                         </frame>
@@ -309,8 +309,8 @@
                         <frame duration="1" hotspotX="0.501805" hotspotY="0.5" original-source="C:\Users\march\Desktop\PinballElement2.png">
                             <collision-poly>
                                 <point x="0.234657" y="1.66082e-006" />
-                                <point x="0.151624" y="0.459185" />
-                                <point x="0.478339" y="0.814624" />
+                                <point x="0.151624" y="0.479593" />
+                                <point x="0.516245" y="0.82823" />
                                 <point x="0.979242" y="0.779761" />
                                 <point x="0.634025" y="1" />
                                 <point x="0.292419" y="0.952381" />
@@ -621,6 +621,9 @@
                     <behavior id="Fade" />
                 </behavior-type>
             </behaviors>
+        </object-type>
+        <object-type name="PressEnter" sid="753459821991048">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>

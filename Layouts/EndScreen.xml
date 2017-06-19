@@ -34,7 +34,7 @@
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-48,400,0</font>
-                        <color>255,153,0</color>
+                        <color>255,204,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
@@ -56,7 +56,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>550</x>
-                        <y>1021.5</y>
+                        <y>967.5</y>
                         <z>0</z>
                         <width>372</width>
                         <height>311</height>
@@ -69,7 +69,7 @@
                 </instance>
                 <instance type="GameOverText" uid="36">
                     <properties>
-                        <text>GAME OVER Press Enter to retry</text>
+                        <text>GAME OVER</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-96,400,0</font>
                         <color>0,0,0</color>
@@ -101,6 +101,33 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PressEnter" uid="49">
+                    <properties>
+                        <text>Press Enter to replay</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-64,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>178.5</x>
+                        <y>1242</y>
+                        <z>0</z>
+                        <width>743</width>
+                        <height>159</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

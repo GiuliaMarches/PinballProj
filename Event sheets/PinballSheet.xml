@@ -35,7 +35,7 @@
                 <action id="0" name="Play" sid="592566835770889" type="Audio">
                     <param id="0" name="Audio file">Strength of a Thousand Men - Two Steps from Hell</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">-10</param>
+                    <param id="3" name="Volume">-15</param>
                     <param id="1" name="Tag (optional)">&quot;Music&quot;</param>
                 </action>
             </actions>
