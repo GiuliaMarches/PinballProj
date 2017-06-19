@@ -15,7 +15,7 @@
     <layers>
         <layer name="Layer 0" sid="122672158067068">
             <initially-visible>1</initially-visible>
-            <background-color>0,0,0</background-color>
+            <background-color>102,0,0</background-color>
             <transparent>0</transparent>
             <parallax>
                 <x>1</x>
@@ -34,21 +34,32 @@
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-48,400,0</font>
-                        <color>255,255,255</color>
+                        <color>255,153,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>550</x>
-                        <y>935.5</y>
+                        <y>1021.5</y>
                         <z>0</z>
                         <width>372</width>
-                        <height>139</height>
+                        <height>311</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -58,24 +69,35 @@
                 </instance>
                 <instance type="GameOverText" uid="36">
                     <properties>
-                        <text>GAME OVER</text>
+                        <text>GAME OVER Press Enter to retry</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-64,400,0</font>
-                        <color>255,255,255</color>
+                        <font>Arial,-96,400,0</font>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>550</x>
-                        <y>527.5</y>
+                        <y>627.5</y>
                         <z>0</z>
-                        <width>496</width>
-                        <height>201</height>
+                        <width>720</width>
+                        <height>401</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

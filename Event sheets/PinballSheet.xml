@@ -13,12 +13,30 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="413147201936385" type="Ball" />
-                <action id="-16" name="Wait" sid="209229480820535" type="System">
+                <action id="5" name="Set frame" sid="892350827549275" type="Button">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="338824975314066" type="Button" />
+                <action id="5" name="Set frame" sid="651867232228733" type="RagnarPowerUp">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="139884033745822" type="RagnarPowerUp" />
+                <action id="5" name="Set frame" sid="657765711879213" type="Pits">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="825344258325297" type="Pits" />
+                <action id="-16" name="Wait" sid="102796682471066" type="System">
                     <param id="0" name="Seconds">1</param>
                 </action>
-                <action id="-9" name="Set value" sid="475920919610971" type="System">
+                <action id="-9" name="Set value" sid="185347570351624" type="System">
                     <param id="0" name="Variable">firstBallDestroyed</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="592566835770889" type="Audio">
+                    <param id="0" name="Audio file">Strength of a Thousand Men - Two Steps from Hell</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;Music&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -44,14 +62,14 @@
                     <param id="0" name="Text">&quot;Score: &quot; &amp; score</param>
                 </action>
                 <action id="5" name="Set web font" sid="622596423083979" type="ScoreText">
-                    <param id="0" name="Family name">&quot;monkey_island_1990_refinedRg&quot;</param>
+                    <param id="0" name="Family name">&quot;dwarves&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="239522624235783" type="BallText">
                     <param id="0" name="Text">&quot;PALLAs: &quot; &amp; ballNumber</param>
                 </action>
                 <action id="5" name="Set web font" sid="250803293525283" type="BallText">
-                    <param id="0" name="Family name">&quot;monkey_island_1990_refinedRg&quot;</param>
+                    <param id="0" name="Family name">&quot;dwarves&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
             </actions>
@@ -128,6 +146,21 @@
                             <param id="0" name="Angular velocity">-500</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="829618317443417">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="974090694544715" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="582631162988384" type="Audio">
+                                    <param id="0" name="Audio file">Bounce-SoundBible.com-12678623</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="241163048370376">
                     <conditions>
@@ -145,6 +178,21 @@
                             <param id="0" name="Angular velocity">500</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="556430232728288">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="679934435063213" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="809993778340666" type="Audio">
+                                    <param id="0" name="Audio file">Bounce-SoundBible.com-12678623</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -208,6 +256,21 @@
                             <param id="2" name="Image point">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="910515114870536">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="232349830807387" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="268810784581614" type="Audio">
+                                    <param id="0" name="Audio file">Blop-Mark_DiAngelo-79054334</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="446448665370259">
                     <conditions>
@@ -222,6 +285,21 @@
                             <param id="2" name="Image point">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="177885982317060">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="281965376905340" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="384465904486464" type="Audio">
+                                    <param id="0" name="Audio file">Blop-Mark_DiAngelo-79054334</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -236,6 +314,21 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="394232054536346" type="Ball" />
                     </actions>
+                    <sub-events>
+                        <event-block sid="701934455668739">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="560128293605230" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="655734028951251" type="Audio">
+                                    <param id="0" name="Audio file">Blop-Mark_DiAngelo-79054334</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -249,12 +342,47 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="377608131585693" type="Ball" />
+                        <action id="5" name="Set frame" sid="810527950544478" type="Pits">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="497589411160639" type="Pits" />
+                        <action id="-16" name="Wait" sid="306447718921222" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="324112105726108" type="Pits">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="584389201723305" type="Pits" />
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="622623639619639" title="Score">
             <sub-events>
+                <event-block sid="346940028425311">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="664092820627381" type="Button">
+                            <param id="0" name="Instance variable">isPoweredUp</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="448300802259645" type="Button">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="483186316488196" type="Button" />
+                    </actions>
+                </event-block>
+                <event-block sid="259657694063784">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="169178454844305" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="880548467624881" type="Button">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="266758092086379" type="Button" />
+                    </actions>
+                </event-block>
                 <comment>Basic score system</comment>
                 <event-block sid="426129562454806">
                     <conditions>
@@ -264,6 +392,19 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="626451596364664">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="202646818308601" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="379377028877548" type="Audio">
+                                    <param id="0" name="Audio file">Blop-Mark_DiAngelo-79054334</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="389237852334451">
                             <conditions>
                                 <condition id="-10" name="Compare opacity" sid="837783019953278" type="Button">
@@ -287,7 +428,29 @@
                                         <action id="-16" name="Set opacity" sid="144319636565648" type="Button">
                                             <param id="0" name="Opacity">40</param>
                                         </action>
+                                        <action id="5" name="Set frame" sid="746036140532711" type="Button">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="244207510448324" type="Button" />
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="749506897093085">
+                                            <conditions>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="680483862955334" type="Button">
+                                                    <param id="0" name="Instance variable">isPoweredUp</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="480599293486583" type="System">
+                                                    <param id="0" name="Variable">score</param>
+                                                    <param id="1" name="Value">30</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="338470119466274" type="Button">
+                                                    <param id="0" name="Opacity">40</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -355,6 +518,15 @@
                                                     <param id="0" name="Variable">ballNumber</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="4" name="Set font color" sid="627054863520722" type="ScoreText">
+                                                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="463645583328601" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="173124853172246" type="ScoreText">
+                                                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="520787263313999">
@@ -369,6 +541,15 @@
                                                 <action id="-11" name="Subtract from" sid="265495531356558" type="System">
                                                     <param id="0" name="Variable">ballNumber</param>
                                                     <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="918431428749260" type="ScoreText">
+                                                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="921321302680496" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="235698011866653" type="ScoreText">
+                                                    <param id="0" name="Color">rgb(255, 255, 255)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -391,6 +572,19 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="886202824562883">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="306818988652530" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="274961593918347" type="Audio">
+                                    <param id="0" name="Audio file">Blop-Mark_DiAngelo-79054334</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="860149929284493">
                             <conditions>
                                 <condition id="-19" name="Pick all" sid="697155268244948" type="System">
@@ -425,6 +619,21 @@
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="307715488098471">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="953390994939422" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="762771582422054" type="Audio">
+                                    <param id="0" name="Audio file">Blop-Mark_DiAngelo-79054334</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <comment>Gives more points</comment>
                 <event-block sid="157737324939718">
@@ -435,18 +644,66 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="230928968851365">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="759752164739199" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="471552581940827" type="Audio">
+                                    <param id="0" name="Audio file">Blop-Mark_DiAngelo-79054334</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="823402290271897">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="996001490137020" type="Ball">
                                     <param id="0" name="Instance variable">isInGame</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-10" name="Add to" sid="692828627486258" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Value">50</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="182028823831096">
+                                    <conditions>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="324539552832155" type="RagnarPowerUp">
+                                            <param id="0" name="Instance variable">isHit</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="723405042422638" type="RagnarPowerUp">
+                                            <param id="0" name="Instance variable">isHit</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="692828627486258" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Value">50</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="471145109925700" type="RagnarPowerUp">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="807676702758207" type="RagnarPowerUp" />
+                                        <action id="4" name="Set font color" sid="830284245951916" type="ScoreText">
+                                            <param id="0" name="Color">rgb(204, 204, 0)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="225182619481809" type="System">
+                                            <param id="0" name="Seconds">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="787361521398775" type="RagnarPowerUp">
+                                            <param id="0" name="Instance variable">isHit</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="679297105919421" type="RagnarPowerUp">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="991444576872362" type="RagnarPowerUp" />
+                                        <action id="4" name="Set font color" sid="141930731668263" type="ScoreText">
+                                            <param id="0" name="Color">rgb(255, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -459,6 +716,19 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="396991203922416">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="105302336520763" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="260831762810171" type="Audio">
+                                    <param id="0" name="Audio file">Blop-Mark_DiAngelo-79054334</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="375033248821283">
                             <conditions>
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="164300439478763" type="LoriPowerUp">
@@ -500,6 +770,101 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="915937737863154" title="Impulse">
+            <sub-events>
+                <event-block sid="458383587225824">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="383083849155992" type="Ball">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">1360</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="680292895951690">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="478818400372402" type="Ball">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">819</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="460755991205365">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="532226779683702" type="Keyboard">
+                                            <param id="0" name="Key">32 (Barra Spaziatrice)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Physics" id="5" name="Apply impulse at angle" sid="724944871059811" type="Ball">
+                                            <param id="0" name="Impulse">20</param>
+                                            <param id="1" name="Angle">270</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="774283967993546">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="218867908003396" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Play" sid="656195565081429" type="Audio">
+                                                    <param id="0" name="Audio file">Woosh-Mark_DiAngelo-4778593</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="182034830815733">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="565184658931205" type="Ball">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">280</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="935611211661740">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="238549881212401" type="Keyboard">
+                                            <param id="0" name="Key">32 (Barra Spaziatrice)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Physics" id="5" name="Apply impulse at angle" sid="882487346617846" type="Ball">
+                                            <param id="0" name="Impulse">20</param>
+                                            <param id="1" name="Angle">270</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="569179725594573">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="745136489282466" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Play" sid="801070009073687" type="Audio">
+                                                    <param id="0" name="Audio file">Woosh-Mark_DiAngelo-4778593</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="486441427342478" title="EndingConditions">
             <sub-events>
                 <event-block sid="382850612900458">
@@ -511,6 +876,9 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="6" name="Stop" sid="614385601767863" type="Audio">
+                            <param id="0" name="Tag">&quot;Music&quot;</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="519010616469705" type="System">
                             <param id="0" name="Layout">EndScreen</param>
                         </action>

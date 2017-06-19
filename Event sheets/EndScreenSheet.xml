@@ -8,16 +8,37 @@
                 <condition id="-2" name="On start of layout" sid="394500472330107" type="System" />
             </conditions>
             <actions>
+                <action disabled="1" id="0" name="Play" sid="676745016180368" type="Audio">
+                    <param id="0" name="Audio file">Flashbang-Kibblesbob-899170896</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Set text" sid="421961086941649" type="YourScore">
                     <param id="0" name="Text">&quot;Your Score: &quot; &amp; score</param>
                 </action>
                 <action id="5" name="Set web font" sid="261161623701811" type="YourScore">
-                    <param id="0" name="Family name">&quot;monkey_island_1990_refinedRg&quot;</param>
+                    <param id="0" name="Family name">&quot;dwarves&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
                 <action id="5" name="Set web font" sid="297329055512056" type="GameOverText">
-                    <param id="0" name="Family name">&quot;monkey_island_1990_refinedRg&quot;</param>
+                    <param id="0" name="Family name">&quot;dwarves&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="498649400261839">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="243859311969028" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="105370620966470" type="Audio">
+                    <param id="0" name="Tag">&quot;EndMusic&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="979757809277850" type="System">
+                    <param id="0" name="Layout">Pinball</param>
                 </action>
             </actions>
         </event-block>

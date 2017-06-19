@@ -9,3 +9,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+	font-family: 'dwarves';
+	src: url('DWARVESC.ttf') format('ttf'),
+	     url('DWARVESC.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

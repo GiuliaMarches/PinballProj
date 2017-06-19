@@ -10,16 +10,20 @@
     <unique-id>xer7isi72pn2</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Viktor Korsun" id="water">Water</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -41,7 +45,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">Firefox</prop>
+        <prop name="Preview browser">Chrome</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -63,7 +67,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400487231208104" speed="5">
-                        <frame duration="1" hotspotX="0.483333" hotspotY="0.516667" original-source="C:\Users\dbga_50\Desktop\pinBall.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_50\Desktop\pinBall.png">
                             <collision-poly>
                                 <point x="0.225678" y="0.300846" />
                                 <point x="0.482412" y="0.141743" />
@@ -75,7 +79,7 @@
                                 <point x="0.168358" y="0.517766" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.483333" hotspotY="0.483333">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
                                 <point x="0.699154" y="0.225678" />
                                 <point x="0.858257" y="0.482412" />
@@ -87,7 +91,7 @@
                                 <point x="0.482234" y="0.168358" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.516667" hotspotY="0.483333">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
                                 <point x="0.774322" y="0.699154" />
                                 <point x="0.517588" y="0.858257" />
@@ -99,7 +103,7 @@
                                 <point x="0.831642" y="0.482234" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.516667" hotspotY="0.516667">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
                                 <point x="0.300846" y="0.774322" />
                                 <point x="0.141743" y="0.517588" />
@@ -279,15 +283,15 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="455554701016651" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\march\Desktop\PinballElement2.png">
+                        <frame duration="1" hotspotX="0.501805" hotspotY="0.5" original-source="C:\Users\march\Desktop\PinballElement2.png">
                             <collision-poly>
-                                <point x="1" y="0.854667" />
-                                <point x="0.92" y="0.966667" />
-                                <point x="0.527917" y="1" />
-                                <point x="0.0791669" y="0.960833" />
-                                <point x="0.488334" y="0.969" />
-                                <point x="0.866667" y="0.904" />
-                                <point x="0.786667" y="0.802667" />
+                                <point x="0.99639" y="0.265308" />
+                                <point x="0.909747" y="0.836736" />
+                                <point x="0.485109" y="1" />
+                                <point x="0" y="0.806971" />
+                                <point x="0.442239" y="0.848639" />
+                                <point x="0.851986" y="0.517007" />
+                                <point x="0.765343" y="1.66082e-006" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -302,15 +306,16 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="290542000960316" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\march\Desktop\PinballElement2.png">
+                        <frame duration="1" hotspotX="0.501805" hotspotY="0.5" original-source="C:\Users\march\Desktop\PinballElement2.png">
                             <collision-poly>
-                                <point x="0.213333" y="0.802667" />
-                                <point x="0.136666" y="0.892667" />
-                                <point x="0.438333" y="0.962333" />
-                                <point x="0.900833" y="0.9555" />
-                                <point x="0.582083" y="1" />
-                                <point x="0.06" y="0.97" />
-                                <point x="0" y="0.856" />
+                                <point x="0.234657" y="1.66082e-006" />
+                                <point x="0.151624" y="0.459185" />
+                                <point x="0.478339" y="0.814624" />
+                                <point x="0.979242" y="0.779761" />
+                                <point x="0.634025" y="1" />
+                                <point x="0.292419" y="0.952381" />
+                                <point x="0.0108303" y="0.702381" />
+                                <point x="0.00361011" y="0.272109" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -351,7 +356,19 @@
             <object-type name="Pits" sid="177060787842193">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="318222097215555" speed="5">
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="318222097215555" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.468" y="0.16" />
+                                <point x="0.76" y="0.264" />
+                                <point x="0.852" y="0.52" />
+                                <point x="0.71" y="0.797" />
+                                <point x="0.443" y="0.8475" />
+                                <point x="0.2215" y="0.72475" />
+                                <point x="0.164" y="0.522" />
+                                <point x="0.192" y="0.348" />
+                            </collision-poly>
+                        </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
                                 <point x="0.468" y="0.16" />
@@ -393,8 +410,20 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="295218571277608" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="295218571277608" speed="5">
+                        <frame duration="1" hotspotX="0.503937" hotspotY="0.5" original-source="C:\Users\dbga_50\Desktop\darkgreenbutton.png" />
+                        <frame duration="1" hotspotX="0.503937" hotspotY="0.5" original-source="C:\Users\dbga_50\Desktop\greenbutton.png">
+                            <collision-poly>
+                                <point x="0.149606" y="0.146154" />
+                                <point x="0.496063" y="0" />
+                                <point x="0.850394" y="0.146154" />
+                                <point x="1" y="0.5" />
+                                <point x="0.850394" y="0.853846" />
+                                <point x="0.496063" y="1" />
+                                <point x="0.149606" y="0.853846" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -407,7 +436,18 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="637770474094980" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.503937" hotspotY="0.5" original-source="C:\Users\dbga_50\Desktop\redbutton.png">
+                            <collision-poly>
+                                <point x="0.149606" y="0.146154" />
+                                <point x="0.496063" y="0" />
+                                <point x="0.850394" y="0.146154" />
+                                <point x="1" y="0.5" />
+                                <point x="0.850394" y="0.853846" />
+                                <point x="0.496063" y="1" />
+                                <point x="0.149606" y="0.853846" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -420,20 +460,46 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="646677489520382" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.503937" hotspotY="0.5" original-source="C:\Users\dbga_50\Desktop\bluebutton.png">
+                            <collision-poly>
+                                <point x="0.149606" y="0.146154" />
+                                <point x="0.496063" y="0" />
+                                <point x="0.850394" y="0.146154" />
+                                <point x="1" y="0.5" />
+                                <point x="0.850394" y="0.853846" />
+                                <point x="0.496063" y="1" />
+                                <point x="0.149606" y="0.853846" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
             <object-type name="RagnarPowerUp" sid="117804885439791">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="isHit" sid="177391573629187" type="boolean" />
+                </instance-variables>
                 <behaviors>
                     <behavior-type name="Physics" sid="127516742667649">
                         <behavior id="Physics" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589221118786852" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589221118786852" speed="5">
+                        <frame duration="1" hotspotX="0.503937" hotspotY="0.5" original-source="C:\Users\dbga_50\Desktop\yellowbutton.png">
+                            <collision-poly>
+                                <point x="0.149606" y="0.146154" />
+                                <point x="0.496063" y="0" />
+                                <point x="0.850394" y="0.146154" />
+                                <point x="1" y="0.5" />
+                                <point x="0.850394" y="0.853846" />
+                                <point x="0.496063" y="1" />
+                                <point x="0.149606" y="0.853846" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.503937" hotspotY="0.5" original-source="C:\Users\dbga_50\Desktop\goldbutton.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -449,7 +515,18 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="517671118216691" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.503937" hotspotY="0.5" original-source="C:\Users\dbga_50\Desktop\purplebutton.png">
+                            <collision-poly>
+                                <point x="0.149606" y="0.146154" />
+                                <point x="0.496063" y="0" />
+                                <point x="0.850394" y="0.146154" />
+                                <point x="1" y="0.5" />
+                                <point x="0.850394" y="0.853846" />
+                                <point x="0.496063" y="1" />
+                                <point x="0.149606" y="0.853846" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -465,15 +542,85 @@
         </object-type>
         <object-type name="StartText" sid="336995420748899">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="968166659480363">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Water">
+                    <effect id="water" />
+                </effect-type>
+            </effects>
         </object-type>
         <object-type name="YourScore" sid="173948552404019">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="631464306331681">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="GameOverText" sid="279956388171487">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="979356056184504">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="BallText" sid="275172073373439">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="400129638947759">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847459965596122" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_50\Desktop\dnd_cover_exp_v2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="642510592671340">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="485405006340711">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="899442433312945" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_50\Desktop\unnamed.png">
+                        <collision-poly>
+                            <point x="0.08" y="0.133333" />
+                            <point x="0.905333" y="0.157778" />
+                            <point x="0.905333" y="0.5" />
+                            <point x="0.84" y="0.733333" />
+                            <point x="0.5" y="0.902222" />
+                            <point x="0.133333" y="0.777778" />
+                            <point x="0.0933333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="772392746412230">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Tutorial" sid="711885168467007">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="220361694858865">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Credits" sid="508662299106253">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="985201950896875">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families>
@@ -502,9 +649,32 @@
     <global-instances>
         <global-instance type="Keyboard" uid="10" />
         <global-instance type="Mouse" uid="15" />
+        <global-instance type="Audio" uid="46">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
-    <music-folder />
+    <sounds-folder>
+        <file name="Bounce-SoundBible.com-12678623.ogg" />
+        <file name="Woosh-Mark_DiAngelo-4778593.ogg" />
+        <file name="Blop-Mark_DiAngelo-79054334.ogg" />
+        <file name="Flashbang-Kibblesbob-899170896.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="Strength of a Thousand Men - Two Steps from Hell.ogg" />
+        <file name="Two Steps From Hell - Love  Loss.ogg" />
+        <file name="Two Steps From Hell - Eternal Sorrow.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
@@ -518,5 +688,7 @@
         <file name="MonkeyIsland-1990-refined.woff" />
         <file name="MonkeyIsland-1990-refined.woff2" />
         <file name="stylesheet.css" />
+        <file name="DWARVESC.ttf" />
+        <file name="DWARVESC.woff" />
     </files-folder>
 </c2project>

@@ -3,6 +3,27 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MenuSheet</name>
     <events>
+        <event-block sid="368665803217179">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="250508423645825" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="393837568568365" type="Audio">
+                    <param id="0" name="Audio file">Two Steps From Hell - Love  Loss</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;StartMusic&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="569884843487894" type="StartText">
+                    <param id="0" name="Family name">&quot;dwarves&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="460546526738505" type="Tutorial">
+                    <param id="0" name="Family name">&quot;dwarves&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="528997672800354">
             <conditions>
                 <condition id="0" name="On key pressed" sid="425034029401927" type="Keyboard">
@@ -10,6 +31,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="6" name="Stop" sid="825542725155680" type="Audio">
+                    <param id="0" name="Tag">&quot;StartMusic&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="467120970603989" type="System">
                     <param id="0" name="Layout">Pinball</param>
                 </action>
